@@ -2,6 +2,7 @@ package com.bcafinance.fundamental.ujian1;/*
 Created By IntelliJ IDEA 2022.2.3 (Comunity Edition)
 Build #IU-222.4345.14, built on October 5, 2022
 @Author Azim a.k.a. Azim
+https://github.com/rnazim/JF-RNA.git
 Java Developer
 Create on 11/11/2022
 @Last Modified 11/11/2022 14:47
@@ -18,7 +19,8 @@ public class SoalDua {
         char[] arrV = strV.toCharArray();
         char[] arrK = strKonso.toCharArray();
 
-        String strA ="abcdefghijklmnopqrstuvwxyz";
+        String strA ="abcdefghijklmnopqrstuvwxyz"; //random
+
         char[] arrA = strA.toCharArray();
         String strOutput ="";
         Random rand = new Random();
@@ -35,7 +37,7 @@ public class SoalDua {
                     strOutput += arrV[rand.nextInt(5)];
                 }
             }else{
-                strOutput += arrA[rand.nextInt(26)];
+                strOutput += arrA[rand.nextInt(26)]; //print random from alfabet
             }
         }
         System.out.println(strOutput.substring(0,1).toUpperCase()+strOutput.substring(1));
